@@ -60,16 +60,16 @@
 ### 引入库文件 ###
 
  -- 此插件基于jQuery开发
-
+	```javascript
 	<script src="js/jquery-11.1.1.min.js"></script>
 	<script src="js/jquery-banner.1.2.0.min.js"></script>
 	<link href="css/jquery-banner.css" rel="stylesheet" type="text/css">
-
+	```
 
 ### HTML代码片段 ###
 
  -- 页面上必须的html代码，保证外层框架结构相同，标记不限，内层结构不限
-	
+	```html	
 	<div id='selector'>
 		<ul>
 			<li><a href="#"><img src="images/01.png"></a></li>
@@ -77,11 +77,11 @@
 			<li><a href="#"><img src="images/03.png"></a></li>
 		</ul>
 	</div>
-
+	```
 ### 调用插件 ###
 
 -- 参数可为空，全部参数请参考列表；可多次调用
-
+	```javascript
 	<script type="javascript">
 	<!--
 		$('#banner').banner('fade',3000,600) //效果 间隔时间 运行速度 
@@ -97,11 +97,11 @@
 		})
 	-->
 	</script>
-
+	```
 ### 官方提供的选择器 ###
 
 -- 自定义样式时请带上外层父级id，避免同一页面多个组件样式冲突
-
+	```css
 	.jquery-bannerImg  /* banner外层框架 */
 	.jquery-bannerImg-images  /* banner的运动层 */
 	.jquery-bannerBtn  /* banner左右控件的盒子 */
@@ -110,5 +110,5 @@
 	.jquery-bannerPoint  /* banner的焦点按钮盒子 */
 	.jquery-bannerPoint-point  /* banner的焦点按钮 */
 	.jquery-bannerPoint-hover  /* 控制banner的焦点按钮选中时的样式 */
-
+	```
  - © 本手册由 磨盘兄弟 @lzmoop 官方提供 
